@@ -1,0 +1,32 @@
+@import 'styles/Config.css';
+@import 'styles/Mixins.css';
+
+$visualization-margin:  20px;
+$visualization-column-width: 25%;
+
+.Visualization-Container {
+    @mixin absolute $page-padding,$page-padding,$page-padding,$page-padding;
+    border: $page-border;
+    background: $content-background;
+}
+
+.Visualization-Container-Column {
+    @mixin absolute $visualization-margin,auto,$visualization-margin,$visualization-margin;
+    width: $visualization-column-width;
+    display: flex;
+    flex-flow: column;
+}
+
+.Visualization-Container-Controls {
+    position: relative;
+
+}
+
+.Visualization-Container-Legend {
+    position: relative;
+    flex-grow: 1;
+}
+
+.Visualization-Container-Diagram {
+    @mixin absolute $visualization-margin,$visualization-margin,$visualization-margin,calc($visualization-column-width + $visualization-margin * 2);
+}

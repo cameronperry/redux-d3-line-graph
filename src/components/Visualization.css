@@ -1,0 +1,24 @@
+@import 'styles/Config.css';
+@import 'styles/Mixins.css';
+
+.Visualization {
+    width: 100%;
+    height: 100%;
+}
+
+.Visualization-Year {
+
+}
+
+.Visualization-Line {
+    fill: none;
+    stroke-width: 2px;
+}
+
+.Visualization-Axis {
+    path {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+}

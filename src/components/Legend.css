@@ -1,0 +1,22 @@
+@import 'styles/Config.css';
+@import 'styles/Mixins.css';
+
+.Legend {
+    width: 100%;
+    height: 100%;
+    @mixin absolute 0,auto,auto,0;
+}
+
+.Legend-Item {
+
+}
+
+.Legend-Item-Line {
+    stroke-width: 5px;
+    text-anchor: start;
+}
+
+.Legend-Item-Text {
+    alignment-baseline: middle;
+    text-anchor: end;
+}

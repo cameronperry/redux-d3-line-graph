@@ -1,0 +1,50 @@
+@import 'styles/Config.css';
+@import 'styles/Mixins.css';
+
+$selector-border: 1px solid #333;
+$selector-background: #eee;
+$selector-foreground: #333;
+$selector-selected-background: #fff;
+$selector-selected-foreground: #000;
+$selector-padding: 10px;
+$selector-spacing: 20px;
+
+.Selector {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: $selector-border;
+    border-top: 0;
+    margin-bottom: $selector-spacing;
+    width: 100%;
+}
+
+.Selector--horizontal {
+    display: flex;
+}
+
+.Selector--vertical {
+
+}
+
+.Selector-Option {
+    cursor: pointer;
+    color: $selector-foreground;
+    background: $selector-background;
+    border-top: $selector-border;
+    padding: $selector-padding;
+    text-align: center;
+}
+
+.Selector-Option--selected {
+    background: $selector-selected-foreground;
+    background: $selector-selected-background;
+    font-weight: bold;
+}
+
+
+.Selector-Option--horizontal {
+    flex-grow: 1;
+}
+.Selector-Option--vertical {
+}
